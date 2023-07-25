@@ -1,5 +1,5 @@
 function smoothScroll(target, duration){
-    let t = document.querySelector(target);
+    const t = document.querySelector(target);
     let tPosition = t.getBoundingClientRect().top;
     let startPosition = window.scrollY
     let distance = tPosition - startPosition;
