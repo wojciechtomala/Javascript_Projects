@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(to right, #978a70, #3E5151);
+    min-height: 100vh;
+    color:#fff;
+}
+header h1{
+    font-size: 62px;
+    transition: 0.2s;
+}
+header, form{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border:none;
+    background-color: #fff;
+}
+form input{
+    color:#222;
+    width: 80%;
+    max-width: 720px;
+    border-radius: 10px 0px 0px 10px;
+}
+input:focus{
+    outline: none;
+}
+form button{
+    border-radius: 0px 10px 10px 0px;
+}
+form button{
+    color: #59b85e;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+form button:hover{
+    color: #5e9b56;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.todo-list{
+    min-width: 35%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.todo-box{
+    margin:0.5rem;
+    background-color: #efefef;
+    color:#111;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 720px;
+    transition: all 0.4s ease;
+}
+.todo-box li{
+    flex: 1;
+    overflow: hidden;
+    text-align: justify;
+    font-size: 22px;
+}
+.todo-li-item{
+    max-width: 600px;
+    padding:5px 10px;
+}
+.check-button, .delete-button{
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin:2.5px;
+    border-radius: 5px;
+}
+.check-button{
+    background-color: #8cb944;
+}
+.delete-button{
+    background-color: #ff4747;
+}
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b8a889;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b16b43;
+}
+@media only screen and (max-width: 730px){
+    header h1{
+        font-size: 30px;
+    }
+    form input{
+        width: 100%;
+        border-radius: 0px;
+    }
+    form button{
+        border-radius:0px;
+    }
+    .check-button, .delete-button{
+        padding: 0.7rem;
+    }
+}
+.fa-trash-o, .fa-check-square{
+    pointer-events: none;
+}
+.todo-box-completed{
+    background-color: #9bd19e;
+    text-decoration:line-through;
+    opacity: 0.8;
+    color:#666;
+}
+.DropAnimation{
+    transform: translateY(8rem);
+    opacity: 0;
+}
+/* STYLES FOR SELECT INPUT: */
+.select{
+    margin:10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    height: 54px;
+}
+select{
+    height: 54px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+select:hover{
+    background-color: #efefef;
+}
