@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial;
+}
+body{
+    background-color: #999;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.chart{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+}
