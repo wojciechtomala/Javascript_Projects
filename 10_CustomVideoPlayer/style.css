@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.video-player video {
+    display: block;
+    width: 100%;
+}
+
+.video-player__timeline {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: #c1c1c1;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.video-player__controls {
+    position: relative;
+    z-index: 2;
+}
+
+.video-player__controls i {
+    cursor: pointer;
+}
+
+.video-player__progress {
+    width: 0;
+    height: 100%;
+    background-color: #adadad;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
