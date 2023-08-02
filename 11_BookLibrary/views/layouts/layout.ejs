@@ -12,12 +12,16 @@
     <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
     <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
     <script defer src="/javascripts/fileUpload.js"></script>
+    <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 <body>
-    <br>
+    <div class="container">
+
     <%- include('../partials/header.ejs') %>
-    <%- include('../partials/errorMessage.ejs') %>
+    <div class="inner-container">
+        <%- include('../partials/errorMessage.ejs') %>
+    </div>
     <%- body %>
-    <br>
+    </div>
 </body>
 </html>
